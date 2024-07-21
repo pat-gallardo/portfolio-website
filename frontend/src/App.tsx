@@ -2,9 +2,9 @@ import Dashboard from "./components/dashboard";
 
 const App: React.FC = () => {
   return (
-   <>
-    <Dashboard />
-   </>
+    <>
+      <Dashboard />
+    </>
   );
 }
 

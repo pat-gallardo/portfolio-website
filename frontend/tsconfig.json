@@ -15,9 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]
     },
     "outDir": "./dist",
     "sourceMap": true,
@@ -32,5 +32,5 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src"]
+  "include": ["src", "src/components/ui", "lib"]
 }

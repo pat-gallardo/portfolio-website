@@ -1,7 +1,9 @@
+import Navbar from "./navbar";
+
 const Dashboard = () => {
     return (
         <>
-            <div> Hello world</div>
+            <Navbar />
         </>
     )
 }
