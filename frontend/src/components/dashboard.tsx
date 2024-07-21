@@ -3,7 +3,9 @@ import Navbar from "./navbar";
 const Dashboard = () => {
     return (
         <>
-            <Navbar />
+            <div>
+                <Navbar />
+            </div>
         </>
     )
 }
