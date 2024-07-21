@@ -1,9 +1,9 @@
-import React from "react";
+import Dashboard from "./components/dashboard";
 
-const App = () => {
+const App: React.FC = () => {
   return (
    <>
-    
+    <Dashboard />
    </>
   );
 }
