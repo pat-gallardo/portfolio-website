@@ -1,5 +1,5 @@
 import Dashboard from "./components/dashboard";
-import "../src/appOutput.css"
+import "../src/App.css"
 
 const App: React.FC = () => {
   return (
