@@ -6,9 +6,10 @@ import {
 import { useState } from "react"
 
 const menuItems = [
-  { value: 'about', label: 'About', link: '#', textFormat:"text-base text-white"},
+  { value: 'about', label: 'About Me', link: '#', textFormat:"text-base text-white"},
+  { value: 'skills', label: 'Skills/ Expertise', link: '#', textFormat:"text-base text-white"},
   { value: 'projects', label: 'Projects', link: '#', textFormat:"text-base text-white"},
-  { value: 'contacts', label: 'Contact Us', link: '#', textFormat:"text-lg text-[#ffb703]"},
+  { value: 'contacts', label: 'Contact Us', link: '#', textFormat:"text-lg text-[#ffb703] font-bold",},
 ];
 
 const Navbar = () => {
