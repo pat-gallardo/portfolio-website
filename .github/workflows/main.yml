@@ -23,6 +23,8 @@ jobs:
         with:
           name: site
           path: build
+          run: |
+            cd frontend  
 
   deploy:
     concurrency: ci-${{ github.ref }}
