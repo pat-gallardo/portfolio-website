@@ -8,7 +8,7 @@ const Intro = () => {
                 <div className="text-white text-[28px] font-bold arimo">Professional Software Developer</div>
             </div>
             <div>
-                <img src={require('../assets/front-photo.png')} className="rounded-full"></img>
+                <img src={require('../assets/front-photo.png')} alt="photo" className="rounded-full"></img>
             </div>
         </div>
         </>
