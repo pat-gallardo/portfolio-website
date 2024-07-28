@@ -26,7 +26,7 @@ jobs:
       - name: Setup Pages
         run: |
           cd frontend
-          npm ci
+          npm ci --force
           npm run build
       - name: Upload Artifacts 🔺 # The project is then uploaded as an artifact named 'site'.
         uses: actions/upload-artifact@v1
