@@ -4,6 +4,8 @@ const Dashboard = () => {
     return (
         <>
           <Navbar />
+          
+          <div className="text-white text-lg">HELLO</div>
         </>
     )
 }
