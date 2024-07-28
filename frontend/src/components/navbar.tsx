@@ -37,7 +37,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="space-x-4 hidden sm:flex">         
+          <div className="space-x-4 hidden sm:flex montserrat">         
           {menuItems.map((item) => (
               <ToggleGroupItem value={item.value} className="hover:underline hover:underline-offset-4">
                   <a href={item.link} className={item.textFormat}>
