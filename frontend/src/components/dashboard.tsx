@@ -1,11 +1,11 @@
 import Navbar from "./navbar";
-import About from "./about"
+import Intro from "./intro"
 
 const Dashboard = () => {
     return (
         <>
           <Navbar />
-          <About />
+          <Intro />
         </>
     )
 }
