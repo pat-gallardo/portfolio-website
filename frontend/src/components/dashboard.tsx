@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-import Intro from "./intro"
+import Intro from "./intro";
 
 const Dashboard = () => {
     return (
