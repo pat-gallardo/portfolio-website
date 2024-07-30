@@ -17,16 +17,18 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const openMenu = () => {
+
       setIsMenuOpen(!isMenuOpen);
+ 
   };
 
   return (
     <>
       <ToggleGroup type="single" className={`flex sticky fixed sm:relative
-      sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg transition-all duration-300 ease-in-out
-      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc] sm:bg-transparent z-10 opacity-100 transform translate-x-0' : ''}`}>
-          <div className="sm:hidden flex absolute right-11 top-[20px]">
-            <button onClick={openMenu} className="focus:outline-none ">
+      sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg 
+      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc] sm:bg-transparent z-10' : ''}`}>
+          <div className='sm:hidden flex absolute right-11 top-[20px]'>
+            <button onClick={openMenu} className='focus:outline-none absolute' >
               <svg
                 className="w-8 h-8 text-[#ffb703]"
                 fill="none"
@@ -38,8 +40,8 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className={`transition-all duration-700 ease-in-out overflow-hidden ${
-        isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 sm:max-h-screen sm:opacity-100'
+          <div className={`transition-all duration-700 ease-in-out${
+        isMenuOpen ? 'max-w-full opacity-100' : 'max-w-0 opacity-0 sm:opacity-100'
       }`}>
           <div className="space-x-4 hidden sm:flex montserrat">         
           {menuItems.map((item) => (
