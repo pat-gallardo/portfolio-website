@@ -15,9 +15,18 @@ const menuItems = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const openMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    if (!isButtonDisabled) {
+      setIsMenuOpen(!isMenuOpen);
+      setIsButtonDisabled(true);
+      
+      // Disable the button for 0.1 seconds
+      setTimeout(() => {
+        setIsButtonDisabled(false);
+      }, 500); // 100 milliseconds = 0.1 seconds
+    }
   };
 
   return (
@@ -25,7 +34,7 @@ const Navbar = () => {
       <ToggleGroup type="single" className={`flex sticky fixed sm:relative
       sm:justify-end items-center w-full p-5 px-4 md-5 text-lg ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc]' : ''}`}>
           <div className="sm:hidden flex absolute right-11 top-[10px]">
-            <button onClick={openMenu} className="focus:outline-none">
+            <button onClick={openMenu} disabled={isButtonDisabled} className={`focus:outline-none ${isButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}>
               <svg
                 className="w-8 h-8 text-[#ffb703]"
                 fill="none"
@@ -37,6 +46,9 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+          <div className={`transition-all duration-700 ease-in-out overflow-hidden ${
+        isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+      }`}>
           <div className="space-x-4 hidden sm:flex montserrat">         
           {menuItems.map((item) => (
               <ToggleGroupItem value={item.value} key={item.key} className="hover:underline hover:underline-offset-4">
@@ -57,6 +69,7 @@ const Navbar = () => {
         ))}
         </div>
       )}
+      </div>
       </ToggleGroup>
     </>
   )
