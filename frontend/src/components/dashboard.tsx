@@ -6,6 +6,7 @@ const Dashboard = () => {
         <div className="overflow-x-hidden">
           <Navbar />
           <Intro />
+          <p>HELLO</p>
         </div> 
     )
 }
