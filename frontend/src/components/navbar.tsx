@@ -15,26 +15,18 @@ const menuItems = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const openMenu = () => {
-    if (!isButtonDisabled) {
       setIsMenuOpen(!isMenuOpen);
-      setIsButtonDisabled(true);
-      
-      // Disable the button for 0.1 seconds
-      setTimeout(() => {
-        setIsButtonDisabled(false);
-      }, 500); // 100 milliseconds = 0.1 seconds
-    }
   };
 
   return (
     <>
       <ToggleGroup type="single" className={`flex sticky fixed sm:relative
-      sm:justify-end items-center w-full p-5 px-4 md-5 text-lg ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc]' : ''}`}>
-          <div className="sm:hidden flex absolute right-11 top-[10px]">
-            <button onClick={openMenu} disabled={isButtonDisabled} className={`focus:outline-none ${isButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''}`}>
+      sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg transition-all duration-300 ease-in-out
+      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc] sm:bg-transparent z-10 opacity-100 transform translate-x-0' : ''}`}>
+          <div className="sm:hidden flex absolute right-11 top-[20px]">
+            <button onClick={openMenu} className="focus:outline-none ">
               <svg
                 className="w-8 h-8 text-[#ffb703]"
                 fill="none"
@@ -61,7 +53,7 @@ const Navbar = () => {
           {isMenuOpen &&( 
             <div className="flex flex-col sm:hidden">         
           {menuItems.map((item) => (
-            <ToggleGroupItem value={item.value} className="hover:underline hover:underline-offset-4">
+            <ToggleGroupItem value={item.value} key={item.key} className="hover:underline hover:underline-offset-4">
                 <a href={item.link} className={item.textFormat}>
                   <div>{item.label}</div>
                 </a>
