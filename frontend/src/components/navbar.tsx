@@ -47,7 +47,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`transition-all duration-700 ease-in-out overflow-hidden ${
-        isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 sm:max-h-screen sm:opacity-100'
       }`}>
           <div className="space-x-4 hidden sm:flex montserrat">         
           {menuItems.map((item) => (
