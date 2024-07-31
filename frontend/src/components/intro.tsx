@@ -1,7 +1,7 @@
 const Intro = () => {
     return (
         <>
-        <div className="flex flex-col-reverse sm:flex-row sm:pt-10 justify-between">
+        <div className="flex flex-col-reverse sm:flex-row sm:pt-24 justify-between">
             <div className="pl-12 sm:pt-32 sm:pl-20 pt-2">
                 <div className="text-white text-[56px] font-bold arimo mb-[-1.5rem]">Hi, I'm</div>
                 <div className="w-[60%] sm:w-[100%] text-[#ffb703] text-[56px] font-bold montserrat w-[365px] drop-shadow-[-2px_4px_#a85b03]">Juan Patrick Gallardo</div>
