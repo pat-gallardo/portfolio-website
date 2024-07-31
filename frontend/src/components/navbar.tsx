@@ -7,9 +7,9 @@ import { useState } from "react"
 
 const menuItems = [
   { key:1 ,value: 'home', label: 'Home', link: '#', textFormat:"text-base text-white"},
-  { key:2 ,value: 'about', label: 'About Me', link: '#', textFormat:"text-base text-white"},
+  { key:2 ,value: 'about', label: 'About', link: '#', textFormat:"text-base text-white"},
   { key:3 ,value: 'services', label: 'Services', link: '#', textFormat:"text-base text-white"},
-  { key:4 ,value: 'portfolio', label: 'Portfolio', link: '#', textFormat:"text-base text-white"},
+  { key:4 ,value: 'portfolio', label: 'Projects', link: '#', textFormat:"text-base text-white"},
   { key:5 ,value: 'contact', label: 'Contact', link: '#', textFormat:"text-lg text-[#ffb703] font-bold",},
 ];
 
@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <>
-      <ToggleGroup type="single" className={`flex sticky fixed sm:relative
+      <ToggleGroup type="single" className={`flex fixed sm:bg-[#219ebc] z-10
       sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg 
-      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc] sm:bg-transparent z-10' : ''}`}>
+      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc]' : ''}`}>
           <div className='sm:hidden flex absolute right-11 top-[20px]'>
             <button onClick={openMenu} className='focus:outline-none absolute' >
               <svg
