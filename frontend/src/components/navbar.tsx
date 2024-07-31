@@ -7,9 +7,9 @@ import { useState } from "react"
 
 const menuItems = [
   { key:1 ,value: 'home', label: 'Home', link: '#', textFormat:"text-base text-white"},
-  { key:2 ,value: 'about', label: 'About Me', link: '#', textFormat:"text-base text-white"},
+  { key:2 ,value: 'about', label: 'About', link: '#', textFormat:"text-base text-white"},
   { key:3 ,value: 'services', label: 'Services', link: '#', textFormat:"text-base text-white"},
-  { key:4 ,value: 'portfolio', label: 'Portfolio', link: '#', textFormat:"text-base text-white"},
+  { key:4 ,value: 'portfolio', label: 'Projects', link: '#', textFormat:"text-base text-white"},
   { key:5 ,value: 'contact', label: 'Contact', link: '#', textFormat:"text-lg text-[#ffb703] font-bold",},
 ];
 

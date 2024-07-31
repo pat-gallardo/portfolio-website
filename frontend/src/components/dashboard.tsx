@@ -1,12 +1,19 @@
 import Navbar from "./navbar";
 import Intro from "./intro";
+import LineBreak from "./linebreak";
+import About from "./about";
 
 const Dashboard = () => {
     return (
         <div className="overflow-x-hidden">
           <Navbar />
           <Intro />
-          <p>HELLO</p>
+          <LineBreak setTitle="ABOUT"/>
+          <About />
+          <LineBreak setTitle="RESUME"/>
+          <LineBreak setTitle="SERVICES"/>
+          <LineBreak setTitle="PORTFOLIO"/>
+          <LineBreak setTitle="CONTACT"/>
         </div> 
     )
 }
