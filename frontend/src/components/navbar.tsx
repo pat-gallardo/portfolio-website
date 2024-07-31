@@ -6,26 +6,29 @@ import {
 import { useState } from "react"
 
 const menuItems = [
-  { value: 'home', label: 'Home', link: '#', textFormat:"text-base text-white"},
-  { value: 'about', label: 'About Me', link: '#', textFormat:"text-base text-white"},
-  { value: 'services', label: 'Services', link: '#', textFormat:"text-base text-white"},
-  { value: 'portfolio', label: 'Portfolio', link: '#', textFormat:"text-base text-white"},
-  { value: 'contact', label: 'Contact', link: '#', textFormat:"text-lg text-[#ffb703] font-bold",},
+  { key:1 ,value: 'home', label: 'Home', link: '#', textFormat:"text-base text-white"},
+  { key:2 ,value: 'about', label: 'About Me', link: '#', textFormat:"text-base text-white"},
+  { key:3 ,value: 'services', label: 'Services', link: '#', textFormat:"text-base text-white"},
+  { key:4 ,value: 'portfolio', label: 'Portfolio', link: '#', textFormat:"text-base text-white"},
+  { key:5 ,value: 'contact', label: 'Contact', link: '#', textFormat:"text-lg text-[#ffb703] font-bold",},
 ];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const openMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+
+      setIsMenuOpen(!isMenuOpen);
+ 
   };
 
   return (
     <>
-      <ToggleGroup type="single" className={`flex
-      sm:justify-end items-center w-full p-5 px-4 md-5 text-lg  ${isMenuOpen ?'flex-col sm:flex-row' : ''}`}>
-          <div className="sm:hidden flex absolute right-11 top-[10px]">
-            <button onClick={openMenu} className="focus:outline-none">
+      <ToggleGroup type="single" className={`flex sticky fixed sm:relative
+      sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg 
+      ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc] sm:bg-transparent z-10' : ''}`}>
+          <div className='sm:hidden flex absolute right-11 top-[20px]'>
+            <button onClick={openMenu} className='focus:outline-none absolute' >
               <svg
                 className="w-8 h-8 text-[#ffb703]"
                 fill="none"
@@ -37,9 +40,12 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="space-x-4 hidden sm:flex">         
+          <div className={`transition-all duration-700 ease-in-out${
+        isMenuOpen ? 'max-w-full opacity-100' : 'max-w-0 opacity-0 sm:opacity-100'
+      }`}>
+          <div className="space-x-4 hidden sm:flex montserrat">         
           {menuItems.map((item) => (
-              <ToggleGroupItem value={item.value} className="hover:underline hover:underline-offset-4">
+              <ToggleGroupItem value={item.value} key={item.key} className="hover:underline hover:underline-offset-4">
                   <a href={item.link} className={item.textFormat}>
                     <div>{item.label}</div>
                   </a>
@@ -49,7 +55,7 @@ const Navbar = () => {
           {isMenuOpen &&( 
             <div className="flex flex-col sm:hidden">         
           {menuItems.map((item) => (
-            <ToggleGroupItem value={item.value} className="hover:underline hover:underline-offset-4">
+            <ToggleGroupItem value={item.value} key={item.key} className="hover:underline hover:underline-offset-4">
                 <a href={item.link} className={item.textFormat}>
                   <div>{item.label}</div>
                 </a>
@@ -57,6 +63,7 @@ const Navbar = () => {
         ))}
         </div>
       )}
+      </div>
       </ToggleGroup>
     </>
   )
