@@ -3,7 +3,7 @@ const About = () => {
     const aboutNextMessage = "I used AI and utilized machine learning in developing applciatiosn and I am also updated on latest developing practices like AGILE and SCRUM."
     return (
         <>
-        <div className="flex mt-[5%] mb-[5%] flex-row justify-between">
+        <div className="flex mt-[5%] mb-[5%] flex-col sm:flex-row justify-between">
             <div className="w-full sm:w-1/2  sm:self-center sm:pt-0 pt-20 ml-20 mr-20 sm:ml-5 sm:mr-5">
                 <img className="saturate-150 opacity-50 sm:ml-0 sm:w-full" src={require('../assets/front-photo2.png')} alt="profile-photo"></img>
             </div>
