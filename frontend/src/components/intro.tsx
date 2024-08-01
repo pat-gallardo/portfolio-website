@@ -1,3 +1,6 @@
+"use client";
+import { BackgroundGradient } from "./ui/background-icon";
+
 const Intro = () => {
     return (
         <>
@@ -8,7 +11,9 @@ const Intro = () => {
                 <div className="text-white text-[28px] font-bold arimo">Professional Software Developer</div>
             </div> 
             <div className="sm:self-center sm:pt-0 pt-20 ml-20 mr-20 sm:ml-5 sm:mr-5">
+            <BackgroundGradient className="rounded-full max-w-sm">
                 <img className="rounded-full sm:ml-0 sm:w-[100%] aspect-auto" src={require('../assets/front-photo.png')} alt="profile-photo"></img>
+                </BackgroundGradient>
             </div>
         </div>
         </>

@@ -1,4 +1,3 @@
-
 import Skills from "./skills";
 const educationItems = [
     {   label: 'SCIENCE & TECHNOLOGY ENGINEERING MATHEMATICS', 
@@ -58,7 +57,7 @@ const Resume = () => {
                         <div className="text-lg">{item.label}</div>
                         <div className="leading-loose">{item.date}</div>
                         <div className="italic">{item.company}</div>
-                        <ul className="list-disc list-inside text-left space-y-1 mt-2">
+                        <ul className="list-disc list-inside text-left space-y-3 mt-2">
                         {Object.values(item.description).map((desc, index) => (
                             <li key={index} className="text-base pl-1 leading-tight">
                                 {desc}
@@ -70,6 +69,8 @@ const Resume = () => {
           ))}
             </div> 
         </div>
+        <div>
+            </div>
         </>
     )
 }

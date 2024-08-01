@@ -22,7 +22,7 @@ const Skills = () => {
     return (
         <>
         <div className="flex flex-col justify-center">
-            <div className="items-center flex flex-col justify-center pb-[2rem] sm:pb-0">
+            <div className="flex flex-col justify-center">
                 <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat ">Skills</div>
                     {skillsItems.length > 0 ? (
                         <ul className="list-disc list-inside text-left space-y-2">
