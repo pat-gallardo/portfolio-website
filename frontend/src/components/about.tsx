@@ -8,8 +8,8 @@ const About = () => {
                 <img className="saturate-150 opacity-50 sm:ml-0 sm:w-full" src={require('../assets/front-photo2.png')} alt="profile-photo"></img>
             </div>
             <div className="flex flex-col gap-[10%] w-full sm:w-1/2 m-3 p-3 sm:ml-[10%] text-wrap">
-                <div className="w-full text-white text-[28px] montserrat ">{aboutMessage}</div>
-                <div className="w-full text-white text-[28px] montserrat ">{aboutNextMessage}</div>
+                <div className="w-full text-white text-lg montserrat ">{aboutMessage}</div>
+                <div className="w-full text-white text-lg montserrat ">{aboutNextMessage}</div>
             </div> 
         </div>
         <div className="bg-white p-[0.5px] text-sm text-transparent">.</div>
