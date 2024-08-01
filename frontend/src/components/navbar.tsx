@@ -28,9 +28,9 @@ const Navbar = () => {
       sm:justify-end items-center ml-[50%] w-[50%] sm:ml-0 sm:w-full h-full sm:h-0 p-5 px-4 md-5 text-lg 
       ${isMenuOpen ?'flex-col sm:flex-row bg-[#219ebc]' : ''}`}>
           <div className='sm:hidden flex absolute right-11 top-[20px]'>
-            <button onClick={openMenu} className='focus:outline-none absolute' >
+            <button onClick={openMenu} className='focus:outline-none absolute bg-[#219ebc] rounded' >
               <svg
-                className="w-8 h-8 text-[#ffb703]"
+                className="w-8 h-8 text-[#023047]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
