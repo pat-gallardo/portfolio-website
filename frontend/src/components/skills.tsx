@@ -1,8 +1,8 @@
 const Skills = () => {
     const skills = [
         'Programming (Windows, Mac)',
-        'Relational and Non-Relational Db',
-        'Cross-platform Software Testing',
+        'Relational and Non-Relational Databases',
+        'Cross-platform Software Testing/ Unit Testing',
         'Application Deployment',
         'Git Versioning',
         'Machine Learning',
@@ -27,7 +27,7 @@ const Skills = () => {
                     {skills.length > 0 ? (
                         <ul className="list-disc list-inside text-left space-y-2">
                             {skills.map((skill, index) => (
-                                <li key={index} className="text-white text-lg">
+                                <li key={index} className="text-white text-lg break-words">
                                     {skill}
                                 </li>
                             ))}
