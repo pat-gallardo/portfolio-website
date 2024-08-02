@@ -9,7 +9,7 @@ const Dashboard = () => {
     return (
         <div className="overflow-x-hidden">
           <Navbar />
-          <Intro />
+          <Intro /> 
           <LineBreak setTitle="ABOUT"/>
           <About />
           <LineBreak setTitle="RESUME"/>
