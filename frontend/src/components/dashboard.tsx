@@ -16,7 +16,7 @@ const Dashboard = () => {
           <Resume />
           <LineBreak setTitle="SERVICES"/>
           <Services />
-          <LineBreak setTitle="PORTFOLIO"/>
+          <LineBreak setTitle="PROJECTS"/>
           <LineBreak setTitle="CONTACT"/>
         </div> 
     )
