@@ -36,7 +36,7 @@ const profesionalItems = [
 const Resume = () => {
     return (
         <>
-        <div className="flex flex-col sm:flex-row text-left pt-10 ml-5 ">
+        <div className="flex flex-col sm:flex-row text-left pt-10 ml-5 px-4">
             <div className="w-full sm:w-1/2 flex flex-col justify-center pb-[2rem] sm:pb-0">
                 <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat ">Education</div>
                     {educationItems.map((item, index) => (
