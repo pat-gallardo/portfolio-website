@@ -2,7 +2,8 @@ import Navbar from "./navbar";
 import Intro from "./intro";
 import LineBreak from "./linebreak";
 import About from "./about";
-import Resume from "./resume"
+import Resume from "./resume";
+import Services from "./services";
 
 const Dashboard = () => {
     return (
@@ -14,6 +15,7 @@ const Dashboard = () => {
           <LineBreak setTitle="RESUME"/>
           <Resume />
           <LineBreak setTitle="SERVICES"/>
+          <Services />
           <LineBreak setTitle="PORTFOLIO"/>
           <LineBreak setTitle="CONTACT"/>
         </div> 
