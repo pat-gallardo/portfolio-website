@@ -7,10 +7,10 @@ const Intro = () => {
 
     return (
         <>
-        <div className="flex flex-col-reverse sm:flex-row sm:pt-24 justify-between">
-            <div className="pl-9 sm:pt-32 sm:pl-20 pt-2">
+        <div className="flex flex-col-reverse sm:flex-row sm:pt-24 justify-between text-center sm:text-left">
+            <div className="sm:pt-32 sm:pl-20 pt-2">
                 <div className="text-white text-[56px] font-bold arimo mb-[-1.5rem]">{message}</div>
-                <div className="w-[60%] sm:w-[100%] text-[#ffb703] text-[56px] font-bold montserrat drop-shadow-[-2px_4px_#a85b03]">{name}</div>
+                <div className="sm:w-[100%] text-[#ffb703] text-[56px] font-bold montserrat drop-shadow-[-2px_4px_#a85b03]">{name}</div>
                 <div className="text-white text-[28px] font-bold arimo">{profession}</div>
                 <FlipWords className='text-white text-[28px] font-bold arimo' words={professionList} />
                 
