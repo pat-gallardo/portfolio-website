@@ -7,7 +7,7 @@ const educationItems = [
     {   label: 'BACHELOR OF SCIENCE IN COMPUTER SCIENCE', 
         date: '2020 - 2023',
         school: 'Technological University of the Philippines', 
-        city: 'Manila City, Cavite'},
+        city: 'Manila City, NCR'},
   ];
 
 const profesionalItems = [
@@ -56,7 +56,7 @@ const Resume = () => {
                     <div key={index} className="w-full text-white break-words">
                         <div className="text-lg">{item.label}</div>
                         <div className="leading-loose">{item.date}</div>
-                        <div className="italic">{item.company}</div>
+                        <div className="italic text-lg">{item.company}</div>
                         <ul className="list-disc list-inside text-left space-y-3 mt-2">
                         {Object.values(item.description).map((desc, index) => (
                             <li key={index} className="text-base pl-1 leading-tight">

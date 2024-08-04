@@ -1,7 +1,7 @@
 const Services1 = () => {
     return (
         <>
-        <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="h-[5rem] w-[5rem]" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="SVGRepo_bgCarrier" strokeWidth="0">
     <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#219ebc" strokeWidth="0">
         </rect>

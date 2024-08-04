@@ -4,6 +4,7 @@ import LineBreak from "./linebreak";
 import About from "./about";
 import Resume from "./resume";
 import Services from "./services";
+import Projects from "./projects";
 
 const Dashboard = () => {
     return (
@@ -17,6 +18,7 @@ const Dashboard = () => {
           <LineBreak setTitle="SERVICES"/>
           <Services />
           <LineBreak setTitle="PROJECTS"/>
+          <Projects />
           <LineBreak setTitle="CONTACT"/>
         </div> 
     )
