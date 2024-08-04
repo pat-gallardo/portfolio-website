@@ -25,3 +25,8 @@ const Dashboard = () => {
 }
 
 export default Dashboard;
+
+// Web Application of an Information System for COVID-19 Vaccines,
+//Volunteers, and Frontliners for Barangay X in Pasay City
+// Document Tracking System
+// Network Tracking System
