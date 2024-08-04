@@ -34,6 +34,7 @@ const Services = () => {
         <>
         <div className="px-8 py-12 mt-20 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
+            className="z-10"
             items={testimonials}
             direction="right"
             speed="slow"
