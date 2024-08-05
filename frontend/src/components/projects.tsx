@@ -35,7 +35,7 @@ const Projects = () => {
       {projectItems.map((item, index) => (
         <div key={index} className="h-screen w-full">
         <LayoutGrid cards={item.cards} />
-        <div key={index}>{item.label}</div>
+        <div key={index} className="flex justify-center">{item.label}</div>
       </div>
       ))}
       </div>

@@ -9,7 +9,7 @@ const About = () => {
                 object-contain mt-10 sm:mt-5 scale-[2.3] 
                 block ml-auto mr-auto" src={require('../assets/images/front-photo2.png')} alt="profile-photo"></img>
             </div>
-            <div className="sm:w-1/2 flex flex-col sm:w-1/2 m-3 p-3 sm:ml-[10%] z-10 text-wrap">
+            <div className="sm:w-1/2 flex flex-col m-3 p-3 sm:ml-[10%] z-10 text-wrap">
                 <div className="w-full text-white text-lg montserrat ">{aboutMessage}</div>
                 <br></br>
                 <div className="w-full text-white text-lg montserrat ">{aboutNextMessage}</div>
