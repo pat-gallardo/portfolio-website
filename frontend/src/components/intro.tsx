@@ -16,7 +16,7 @@ const Intro = () => {
                 
              </div> 
             <div className="sm:self-center sm:pt-0 pt-20 ml-20 mr-20 sm:ml-5 sm:mr-5">
-                <img className="rounded-full sm:ml-0 sm:w-[100%] aspect-auto" src={require('../assets/front-photo.png')} alt="profile-photo"></img>
+                <img className="rounded-full sm:ml-0 sm:w-[100%] aspect-auto" src={require('../assets/images/front-photo.png')} alt="profile-photo"></img>
             </div>
         </div>
         </>

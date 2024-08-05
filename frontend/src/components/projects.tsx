@@ -1,101 +1,44 @@
 import { LayoutGrid } from "./ui/layout-grid";
+import Project1 from "./ui/projects/project-1";
+import Project2 from "./ui/projects/project-2";
+import Project3 from "./ui/projects/project-3";
+import Project4 from "./ui/projects/project-4";
 
 const Projects = () => {
-    const SkeletonOne = () => {
-        return (
-          <div>
-            <p className="font-bold md:text-4xl text-xl text-white">
-              House in the woods
-            </p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A serene and tranquil retreat, this house in the woods offers a peaceful
-              escape from the hustle and bustle of city life.
-            </p>
-          </div>
-        );
-      };
-       
-      const SkeletonTwo = () => {
-        return (
-          <div>
-            <p className="font-bold md:text-4xl text-xl text-white">
-              House above the clouds
-            </p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              Perched high above the world, this house offers breathtaking views and a
-              unique living experience. It&apos;s a place where the sky meets home,
-              and tranquility is a way of life.
-            </p>
-          </div>
-        );
-      };
-      const SkeletonThree = () => {
-        return (
-          <div>
-            <p className="font-bold md:text-4xl text-xl text-white">
-              Greens all over
-            </p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-              perfect place to relax, unwind, and enjoy life.
-            </p>
-          </div>
-        );
-      };
-      const SkeletonFour = () => {
-        return (
-          <div>
-            <p className="font-bold md:text-4xl text-xl text-white">
-              Rivers are serene
-            </p>
-            <p className="font-normal text-base text-white"></p>
-            <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A house by the river is a place of peace and tranquility. It&apos;s the
-              perfect place to relax, unwind, and enjoy life.
-            </p>
-          </div>
-        );
-      };
-      
-    const cards = [
-        {
-          id: 1,
-          content: <SkeletonOne />,
-          className: "md:col-span-2",
-          thumbnail:
-            "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 2,
-          content: <SkeletonTwo />,
-          className: "col-span-1",
-          thumbnail:
-            "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 3,
-          content: <SkeletonThree />,
-          className: "col-span-1",
-          thumbnail:
-            "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 4,
-          content: <SkeletonFour />,
-          className: "md:col-span-2",
-          thumbnail:
-            "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-      ];
+  const projectItems = [
+    { key:1 , label: 'Network Tracking System Application',
+       description: 'A desktop application developed using Java and Java UI stores information on a SQLite database. It tracks all connected devices on an active internet connection and can be used to detect if a suspected person has access to your local internet connection.',
+       textFormat:"text-base text-white",
+       cards: Project1(),
+      },
+    { key:2 , label: 'DTS: Document Tracking System Website',
+       description: 'A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. It tracks all documents requested by the client to its users with ease and notifies the users when the documents have been received by the client.', 
+       textFormat:"text-base text-white",
+       cards: Project2(),
+      },
+    { key:3 , label: 'Meditrace: Information System for COVID-19 Vaccines, Volunteers, and Frontliners for a Barangay in Pasay City',
+       description: 'A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. It stores all information about COVID-19 vaccine facilities in the barangay, including medical practitioners, volunteers, and currently available vaccines.',
+       textFormat:"text-base text-white",
+       cards: Project3(),
+      },
+    { key:4 , label: 'PRECALGURO: AI Desktop Application for Precalculus, Learning Management System.', 
+      description: 'A desktop application developed using Python with PyQt for GUI. Used Deep Learning for its AI and stores the data on Google Firebase a cloud-based database. It displays a list of subjects, lessons, topics and exams about Precalculus. It also let\'s the customer use their own study guides and lessons. It records the users scores and grades at the end of each assessment exams.',
+      textFormat:"text-base text-white",
+      cards: Project4(),
+    },
+    ];
+
 
     return (
         <>
-        <div className="h-screen w-full">
-      <LayoutGrid cards={cards} />
-    </div>
+      <div>
+      {projectItems.map((item, index) => (
+        <div key={index} className="h-screen w-full">
+        <LayoutGrid cards={item.cards} />
+        <div key={index}>{item.label}</div>
+      </div>
+      ))}
+      </div>
         </>
     )
 }
