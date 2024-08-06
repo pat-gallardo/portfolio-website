@@ -7,8 +7,7 @@ const Project2 = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A desktop application developed using Java and Java UI stores information on a SQLite database. 
-            It tracks all connected devices on an active internet connection and can be used to detect if a suspected person has access to your local internet connection.
+            This is the home tab of the web application where the user need to sign-in to access the dashboard.
             </p>
           </div>
         );
@@ -18,12 +17,12 @@ const Project2 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-            Tracking Network Results
+            User Account Creation
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">      
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. 
-            It tracks all documents requested by the client to its users with ease and notifies the users when the documents have been received by the client.
+            This shows the page where you can create your own account to access the web-application.
+            The account creation has CAPTCHA in it to provide security against users who spam accounts.
             </p>
           </div>
         );
@@ -32,11 +31,11 @@ const Project2 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-              Filtered IP Address
+              Manage Account
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. It stores all information about COVID-19 vaccine facilities in the barangay, including medical practitioners, volunteers, and currently available vaccines.
+            This shows your information and a setting to change password or delete your account.
             </p>
           </div>
         );
@@ -45,13 +44,11 @@ const Project2 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-              Downloaded List of Networks
+              Update Account
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A desktop application developed using Python with PyQt for GUI. Used Deep Learning for its AI and stores the data on Google Firebase a cloud-based database.
-              It displays a list of subjects, lessons, topics and exams about Precalculus. It also let's the customer use their own study guides and lessons. 
-              It records the users scores and grades at the end of each assessment exams.
+              You can change your username, email and password here.
             </p>
           </div>
         );

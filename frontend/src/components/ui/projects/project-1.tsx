@@ -7,8 +7,7 @@ const Project1 = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A desktop application developed using Java and Java UI stores information on a SQLite database. 
-            It tracks all connected devices on an active internet connection and can be used to detect if a suspected person has access to your local internet connection.
+            This is the main dashboard of the application here we can see the network id, ip address hostname and its state.
             </p>
           </div>
         );
@@ -18,12 +17,11 @@ const Project1 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-            Tracking Network Results
+            Searching Process
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">      
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. 
-            It tracks all documents requested by the client to its users with ease and notifies the users when the documents have been received by the client.
+           This shows the result after running the application for the first time.
             </p>
           </div>
         );
@@ -36,7 +34,7 @@ const Project1 = () => {
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. It stores all information about COVID-19 vaccine facilities in the barangay, including medical practitioners, volunteers, and currently available vaccines.
+            Here you can filter the results if you wanted to look for the specific ip address.
             </p>
           </div>
         );
@@ -45,13 +43,11 @@ const Project1 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-              Downloaded List of Networks
+              Exported List of Networks
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A desktop application developed using Python with PyQt for GUI. Used Deep Learning for its AI and stores the data on Google Firebase a cloud-based database.
-              It displays a list of subjects, lessons, topics and exams about Precalculus. It also let's the customer use their own study guides and lessons. 
-              It records the users scores and grades at the end of each assessment exams.
+              The application has an option if you want to export the list and saved on a notepad.
             </p>
           </div>
         );

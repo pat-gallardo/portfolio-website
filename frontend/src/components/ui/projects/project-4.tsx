@@ -3,12 +3,11 @@ const Project4 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-            Home Interface
+            Student Home Interface
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A desktop application developed using Java and Java UI stores information on a SQLite database. 
-            It tracks all connected devices on an active internet connection and can be used to detect if a suspected person has access to your local internet connection.
+            This shows the Student side of the application, which we can browse along
             </p>
           </div>
         );
@@ -18,12 +17,12 @@ const Project4 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-            Tracking Network Results
+            Assessment Test 
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">      
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. 
-            It tracks all documents requested by the client to its users with ease and notifies the users when the documents have been received by the client.
+            This is the assessment test part of the application, this assessments consists of 10 questions
+            that can be answered by typing your answer.
             </p>
           </div>
         );
@@ -32,11 +31,12 @@ const Project4 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-              Filtered IP Address
+              Data and Results tab
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-            A website application built using PHP with the CodeIgniter framework stores data in a PHPMyAdmin database. It stores all information about COVID-19 vaccine facilities in the barangay, including medical practitioners, volunteers, and currently available vaccines.
+            This is a Teachers side feature, data and results tab which we can see are the 
+            information of the students and their scores to the exams along with a graph represented.
             </p>
           </div>
         );
@@ -45,13 +45,12 @@ const Project4 = () => {
         return (
           <div>
             <p className="font-bold md:text-4xl text-xl text-white">
-              Downloaded List of Networks
+              Test/Exams Creation tab
             </p>
             <p className="font-normal text-base text-white"></p>
             <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-              A desktop application developed using Python with PyQt for GUI. Used Deep Learning for its AI and stores the data on Google Firebase a cloud-based database.
-              It displays a list of subjects, lessons, topics and exams about Precalculus. It also let's the customer use their own study guides and lessons. 
-              It records the users scores and grades at the end of each assessment exams.
+              This is a promising feature of the application in which the Teachers can also create their
+              own questions with solutions, that can be used in the assessment or exams.
             </p>
           </div>
         );
