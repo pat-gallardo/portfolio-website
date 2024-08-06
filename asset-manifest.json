@@ -1,17 +1,33 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.1adf7351.css",
-    "main.js": "/portfolio-website/static/js/main.0efbe307.js",
+    "main.css": "/portfolio-website/static/css/main.665d2349.css",
+    "main.js": "/portfolio-website/static/js/main.85462962.js",
     "static/js/453.8ab44547.chunk.js": "/portfolio-website/static/js/453.8ab44547.chunk.js",
     "static/media/front-photo2.png": "/portfolio-website/static/media/front-photo2.9738b8ae77ea0c56dbda.png",
     "static/media/front-photo.png": "/portfolio-website/static/media/front-photo.68004884488cfaf2ff43.png",
+    "static/media/softeng2-2.png": "/portfolio-website/static/media/softeng2-2.434df2ad2ac98c2407b0.png",
+    "static/media/softeng2-4.png": "/portfolio-website/static/media/softeng2-4.795c3ff658fdd1521db4.png",
+    "static/media/softeng2-1.png": "/portfolio-website/static/media/softeng2-1.f7666047a2bce9dd8b65.png",
+    "static/media/softeng1-2.png": "/portfolio-website/static/media/softeng1-2.a8092789f9dbeaac6231.png",
+    "static/media/softeng1-1.png": "/portfolio-website/static/media/softeng1-1.1d9ad1bd8b0c3d4a080f.png",
+    "static/media/networks-4.jpg": "/portfolio-website/static/media/networks-4.011c255a7b0e73cd394a.jpg",
+    "static/media/softeng1-3.png": "/portfolio-website/static/media/softeng1-3.6ed9780541e6375791a3.png",
+    "static/media/softeng2-3.png": "/portfolio-website/static/media/softeng2-3.aea2b027bb6f184b1833.png",
+    "static/media/softeng1-4.png": "/portfolio-website/static/media/softeng1-4.08a4dabf057c1be7fe91.png",
+    "static/media/networks-2.jpg": "/portfolio-website/static/media/networks-2.c551f3673b4b3467cd9d.jpg",
+    "static/media/networks-1.png": "/portfolio-website/static/media/networks-1.ae7cf6654e70b1913e19.png",
+    "static/media/thesis-1.png": "/portfolio-website/static/media/thesis-1.05c70f6a71a1693fe904.png",
+    "static/media/thesis-3.jpg": "/portfolio-website/static/media/thesis-3.3b8e26b56671bfabe73a.jpg",
+    "static/media/networks-3.jpg": "/portfolio-website/static/media/networks-3.aad70a1afe5b24ed2719.jpg",
+    "static/media/thesis-2.jpg": "/portfolio-website/static/media/thesis-2.ab7ce88b15c96d760310.jpg",
+    "static/media/thesis-4.jpg": "/portfolio-website/static/media/thesis-4.72b0ed0b906f75f69bd6.jpg",
     "index.html": "/portfolio-website/index.html",
-    "main.1adf7351.css.map": "/portfolio-website/static/css/main.1adf7351.css.map",
-    "main.0efbe307.js.map": "/portfolio-website/static/js/main.0efbe307.js.map",
+    "main.665d2349.css.map": "/portfolio-website/static/css/main.665d2349.css.map",
+    "main.85462962.js.map": "/portfolio-website/static/js/main.85462962.js.map",
     "453.8ab44547.chunk.js.map": "/portfolio-website/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1adf7351.css",
-    "static/js/main.0efbe307.js"
+    "static/css/main.665d2349.css",
+    "static/js/main.85462962.js"
   ]
 }
