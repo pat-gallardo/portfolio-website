@@ -5,6 +5,7 @@ import About from "./about";
 import Resume from "./resume";
 import Services from "./services";
 import Projects from "./projects";
+import Contacts from "./Contacts";
 
 const Dashboard = () => {
     return (
@@ -20,6 +21,7 @@ const Dashboard = () => {
           <LineBreak setTitle="PROJECTS"/>
           <Projects />
           <LineBreak setTitle="CONTACT"/>
+          <Contacts />
         </div> 
     )
 }
