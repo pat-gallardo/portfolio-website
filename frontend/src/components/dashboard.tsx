@@ -21,14 +21,9 @@ const Dashboard = () => {
           <LineBreak setTitle="PROJECTS"/>
           <Projects />
           <LineBreak setTitle="CONTACT"/>
-          <Contacts />
+          <Contacts />         
         </div> 
     )
 }
 
 export default Dashboard;
-
-// Web Application of an Information System for COVID-19 Vaccines,
-//Volunteers, and Frontliners for Barangay X in Pasay City
-// Document Tracking System
-// Network Tracking System

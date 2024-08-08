@@ -1,15 +1,15 @@
 const menuItems = [
-  { key:1 ,value: 'home', label: 'Home', link: '#', textFormat:"text-base text-white"},
-  { key:2 ,value: 'about', label: 'About', link: '#', textFormat:"text-base text-white"},
-  { key:3 ,value: 'services', label: 'Services', link: '#', textFormat:"text-base text-white"},
-  { key:4 ,value: 'portfolio', label: 'Projects', link: '#', textFormat:"text-base text-white"},
-  { key:5 ,value: 'contact', label: 'Contact', link: '#', textFormat:"text-base text-[#ffb703] font-bold",},
+  { key:1 ,value: 'home', label: 'Home', link: '/', textFormat:"text-base text-white"},
+  { key:2 ,value: 'about', label: 'About', link: 'About', textFormat:"text-base text-white"},
+  { key:3 ,value: 'services', label: 'Services', link: 'Services', textFormat:"text-base text-white"},
+  { key:4 ,value: 'portfolio', label: 'Projects', link: 'Projects', textFormat:"text-base text-white"},
+  { key:5 ,value: 'contact', label: 'Contact', link: 'Contact', textFormat:"text-base text-[#ffb703] font-bold",},
 ];
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-[#219ebc] fixed z-20">
+      <div className="navbar bg-[#219ebc] fixed z-20 pl-5 pr-5">
         <div className="flex-none">
         </div>
         <div className="flex-1">
