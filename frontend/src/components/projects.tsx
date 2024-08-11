@@ -3,6 +3,7 @@ import Project1 from "./ui/projects/project-1";
 import Project2 from "./ui/projects/project-2";
 import Project3 from "./ui/projects/project-3";
 import Project4 from "./ui/projects/project-4";
+import Project5 from "./ui/projects/project-5";
 
 const Projects = () => {
   const projectItems = [
@@ -26,8 +27,12 @@ const Projects = () => {
       textFormat:"text-base text-white",
       cards: Project4(),
     },
+    { key:5 , label: 'Journey AI Chatbot', 
+      description: 'A website application chatbot built using Python with Flask framework. This AI-chatbot helps customers to answer, give information and request for recommendation about following products the website has to offer.',
+      textFormat:"text-base text-white",
+      cards: Project5(),
+    }
     ];
-
 
     return (
         <>
