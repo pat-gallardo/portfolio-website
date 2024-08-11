@@ -1,18 +1,17 @@
 const menuItems = [
-  { key:1 ,value: 'home', label: 'Home', link: '/', textFormat:"text-base text-white"},
-  { key:2 ,value: 'about', label: 'About', link: 'About', textFormat:"text-base text-white"},
-  { key:3 ,value: 'services', label: 'Services', link: 'Services', textFormat:"text-base text-white"},
-  { key:4 ,value: 'portfolio', label: 'Projects', link: 'Projects', textFormat:"text-base text-white"},
-  { key:5 ,value: 'contact', label: 'Contact', link: 'Contact', textFormat:"text-base text-[#ffb703] font-bold",},
+  {value: 'home', label: 'Home', link: '/', textFormat:"text-base text-white"},
+  {value: 'about', label: 'About', link: '#about', textFormat:"text-base text-white"},
+  {value: 'resume', label: 'Resume', link: '#resume', textFormat:"text-base text-white"},
+  {value: 'services', label: 'Services', link: '#services', textFormat:"text-base text-white"},
+  {value: 'portfolio', label: 'Projects', link: '#projects', textFormat:"text-base text-white"},
+  {value: 'contact', label: 'Contact', link: '#contact', textFormat:"text-base text-[#ffb703] font-bold",},
 ];
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-[#219ebc] fixed z-20 pl-5 pr-5">
-        <div className="flex-none">
-        </div>
-        <div className="flex-1">
+      <div className="navbar bg-[#219ebc] fixed z-20 pl-5 pr-5 xl:justify-center xl:w-full">
+        <div className="flex-1 xl:flex-none">
           </div>
           <div className="flex-none">
           <div className='transition-all duration-700 ease-in-out'>
@@ -45,7 +44,6 @@ const Navbar = () => {
             <div className="drawer-side z-20">
               <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
               <ul className="menu bg-[#219ebc] text-base-content min-h-full w-60 p-4">
-                {/* Sidebar content here */}
                 {menuItems.map((item, index) => (
               <li key={index} ><a href={item.link} className={`${item.textFormat}
               hover:underline hover:underline-offset-4`}>
