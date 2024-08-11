@@ -10,8 +10,8 @@ const menuItems = [
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-[#219ebc] fixed z-20 pl-5 pr-5 xl:justify-center xl:w-full">
-        <div className="flex-1 xl:flex-none">
+      <div className="navbar bg-[#219ebc] fixed z-20 pl-5 pr-5 2xl:justify-center 2xl:w-full">
+        <div className="flex-1 2xl:flex-none">
           </div>
           <div className="flex-none">
           <div className='transition-all duration-700 ease-in-out'>

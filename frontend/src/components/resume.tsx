@@ -36,11 +36,11 @@ const profesionalItems = [
 const Resume = () => {
     return (
         <>
-        <div className="flex flex-col sm:flex-row text-left pt-10 ml-5 px-4">
+        <div className="flex flex-col sm:flex-row text-left pt-10 ml-5 px-4 2xl:justify-center">
             <div className="w-full sm:w-1/2 flex flex-col justify-center pb-[2rem] sm:pb-0">
-                <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat ">Education</div>
+                <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat 2xl:ml-[15rem]">Education</div>
                     {educationItems.map((item, index) => (
-                        <div key={index} className="w-full text-white break-words">
+                        <div key={index} className="w-full text-white break-words 2xl:ml-[15rem]">
                             <div className="text-lg">{item.label}</div>
                             <div className="leading-loose">{item.date}</div>
                             <div className="italic">{item.school}</div>
@@ -50,7 +50,7 @@ const Resume = () => {
                     ))}
             <Skills />
             </div>
-            <div className="w-full sm:w-1/2 items-center flex flex-col">
+            <div className="w-full sm:w-1/2 items-center flex flex-col 2xl:pr-[30rem]">
                 <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat ">Experience</div>
                 {profesionalItems.map((item, index) => (
                     <div key={index} className="w-full text-white break-words">

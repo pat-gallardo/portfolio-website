@@ -21,7 +21,7 @@ const Skills = () => {
 
     return (
         <>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center 2xl:ml-[15rem]">
             <div className="flex flex-col justify-center">
                 <div className="w-full text-[#8ecae6] font-bold text-[40px] montserrat ">Skills</div>
                     {skillsItems.length > 0 ? (

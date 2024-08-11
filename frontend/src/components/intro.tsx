@@ -7,7 +7,7 @@ const Intro = () => {
 
     return (
         <>
-        <div className="flex flex-col-reverse sm:flex-row sm:pt-24 justify-between text-center sm:text-left">
+        <div className="flex flex-col-reverse sm:flex-row sm:pt-24 justify-between text-center sm:text-left 2xl:justify-center 2xl:w-full 2xl:gap-16">
             <div className="sm:pt-32 sm:pl-20 pt-2">
                 <div className="text-white text-[56px] font-bold arimo mb-[-1.5rem]">{message}</div>
                 <div className="sm:w-[100%] text-[#ffb703] text-[56px] font-bold montserrat drop-shadow-[-2px_4px_#a85b03]">{name}</div>

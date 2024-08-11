@@ -36,7 +36,7 @@ const Contacts = () => {
     }
 
     return (<>
-    <div id="contact" className="flex justify-center pt-20 pb-20 h-[100%] gap-4">
+    <div id="contact" className="flex justify-center pt-20 pb-20 h-[100%] gap-4 2xl:pr-[20rem] 2xl:pl-[20rem]">
         <Card className="w-[75%] rounded bg-white text-white">
       <CardHeader>
         <CardTitle className="text-[#023047]">Do you have questions or inquiries ?</CardTitle>
