@@ -26,7 +26,7 @@ const Contacts = () => {
               <Input id="email" className="text-[#023047]" placeholder="Email" />
               <Textarea id='content' className="text-[#023047] w-[100%] h-64 rounded resize-none" placeholder="Type your message here." />
             </div>
-          </div>
+          </div> 
         </form>
       </CardContent>
       <CardFooter className="flex justify-end">
