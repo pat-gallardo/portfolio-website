@@ -24,10 +24,10 @@ jobs:
           npm ci --force
           npm run build
 
-      # Step 3: Check if build folder exists
+      # Step 3: Check if build folder exists (PowerShell equivalent of 'ls -la')
       - name: Check Build Output
         run: |
-          ls -la frontend/build
+          Get-ChildItem -Recurse frontend/build
 
       # Step 4: Upload build folder as an artifact
       - name: Upload Build Artifacts 🔺
