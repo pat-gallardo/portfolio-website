@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: site
-          path: frontend/build
+          path: frontend/build/
 
   deploy:
     concurrency: ci-${{ github.ref }}
@@ -43,4 +43,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: 'site'  # The deployment folder should match the name of the artifact.
+          folder: './site'  # Ensure the correct folder is specified
