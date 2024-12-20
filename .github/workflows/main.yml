@@ -24,12 +24,17 @@ jobs:
           npm ci --force
           npm run build
 
-      # Step 3: Upload build folder as an artifact
+      # Step 3: Check if build folder exists
+      - name: Check Build Output
+        run: |
+          ls -la frontend/build
+
+      # Step 4: Upload build folder as an artifact
       - name: Upload Build Artifacts 🔺
         uses: actions/upload-artifact@v4
         with:
           name: site
-          path: frontend/build # Ensure this matches the actual build output path
+          path: frontend/build
 
   deploy:
     name: Deploy to GitHub Pages
@@ -46,10 +51,9 @@ jobs:
         with:
           name: site
 
-      # Step 3: Validate the artifact path
-      - name: Validate Artifact Path
+      # Step 3: Check if site folder is downloaded correctly
+      - name: Check Artifact Download
         run: |
-          ls -la
           ls -la site
 
       # Step 4: Deploy to GitHub Pages
