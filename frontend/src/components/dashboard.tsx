@@ -5,8 +5,8 @@ import About from "./about";
 import Resume from "./resume";
 import Services from "./services";
 import Projects from "./projects";
-import Contacts from "./contacts";
-import FooterPage from "./footer";
+import Contacts from "./Contacts";
+import FooterPage from "./Footer";
 
 const Dashboard = () => {
     return (
