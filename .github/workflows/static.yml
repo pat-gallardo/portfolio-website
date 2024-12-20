@@ -35,15 +35,15 @@ jobs:
 
     - name: Verify build output
       run: |
-        ls -l frontend/dist
-      
+        ls -l frontend/build  # Verify the build directory
+
     - name: Setup Pages
       uses: actions/configure-pages@v5
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './frontend/dist'
+        path: './frontend/build'  # Point to build folder
         
     - name: Deploy to GitHub Pages
       id: deployment
