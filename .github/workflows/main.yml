@@ -23,7 +23,6 @@ jobs:
         with:
           name: site
           path: frontend/build
-          
 
   deploy:
     concurrency: ci-${{ github.ref }}
@@ -38,7 +37,7 @@ jobs:
         with:
           name: site
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
           folder: 'site' # The deployment folder should match the name of the artifact. Even though our project builds into the 'build' folder the artifact name of 'site' must be placed here.
