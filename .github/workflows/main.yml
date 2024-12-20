@@ -10,54 +10,37 @@ permissions:
 
 jobs:
   build:
-    name: Build the Project
     runs-on: windows-latest
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout Code 🛎️
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # Step 2: Install dependencies and build the project
-      - name: Install Dependencies and Build 🔧
+      - name: Install and Build 🔧
         run: |
           cd frontend
           npm ci --force
           npm run build
 
-      # Step 3: Check if build folder exists (PowerShell equivalent of 'ls -la')
-      - name: Check Build Output
-        run: |
-          Get-ChildItem -Recurse frontend/build
-
-      # Step 4: Upload build folder as an artifact
-      - name: Upload Build Artifacts 🔺
-        uses: actions/upload-artifact@v4
+      - name: Upload Artifacts 🔺
+        uses: actions/upload-artifact@v3
         with:
           name: site
           path: frontend/build
 
   deploy:
-    name: Deploy to GitHub Pages
-    needs: build
+    concurrency: ci-${{ github.ref }}
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout Code 🛎️
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # Step 2: Download the build artifacts
-      - name: Download Build Artifacts 🔻
-        uses: actions/download-artifact@v4
+      - name: Download Artifacts 🔻
+        uses: actions/download-artifact@v3
         with:
           name: site
 
-      # Step 3: Check if site folder is downloaded correctly
-      - name: Check Artifact Download
-        run: |
-          ls -la site
-
-      # Step 4: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: 'site'
+          folder: 'site'  # The deployment folder should match the name of the artifact.
