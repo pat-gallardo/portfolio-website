@@ -22,15 +22,16 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-        
-    - name: Access frontend folder
-      run: cd frontend
       
     - name: Install dependencies
-      run: npm install --legacy-peer-deps
-      
+      run: |
+        cd frontend
+        npm install --legacy-peer-deps
+
     - name: Build project
-      run: npm run build
+      run: |
+        cd frontend
+        npm run build
       
     - name: Setup Pages
       uses: actions/configure-pages@v5
@@ -38,7 +39,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './dist'
+        path: './frontend/dist'
         
     - name: Deploy to GitHub Pages
       id: deployment
