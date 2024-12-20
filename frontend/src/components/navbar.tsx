@@ -1,5 +1,5 @@
 const menuItems = [
-  {value: 'home', label: 'Home', link: '/', textFormat:"text-base text-white"},
+  {value: 'home', label: 'Home', link: '#home', textFormat:"text-base text-white"},
   {value: 'about', label: 'About', link: '#about', textFormat:"text-base text-white"},
   {value: 'resume', label: 'Resume', link: '#resume', textFormat:"text-base text-white"},
   {value: 'services', label: 'Services', link: '#services', textFormat:"text-base text-white"},
