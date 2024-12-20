@@ -29,12 +29,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: site
-          path: frontend/build
+          path: frontend/build # Ensure the path matches the build output
 
   deploy:
     name: Deploy to GitHub Pages
     needs: [build] # Ensures the build job completes before starting the deploy job
-    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository
@@ -47,8 +46,14 @@ jobs:
         with:
           name: site
 
-      # Step 3: Deploy the site to GitHub Pages
+      # Step 3: Move artifacts to correct folder
+      - name: Prepare Deployment Folder
+        run: |
+          mkdir -p site
+          mv frontend/build/* site/
+
+      # Step 4: Deploy the site to GitHub Pages
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: 'site' # This should match the artifact name used in the build job
+          folder: 'site' # Matches the folder prepared in the previous step
